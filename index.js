@@ -14,6 +14,7 @@ app.get('/api',(req,res)=>{
 	}
 	catch(e){
 		console.log("ПОМИЛКА");
+		return 0
 	}
 })
 

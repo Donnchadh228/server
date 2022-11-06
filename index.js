@@ -13,7 +13,7 @@ app.get('/api',(req,res)=>{
 	return res.json({"a":2})
 	}
 	catch(e){
-		console.log("ПОМИЛКА);
+		console.log("ПОМИЛКА");
 	}
 })
 

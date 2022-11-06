@@ -34,9 +34,7 @@ app.get('/api',(req,res)=>{
 
 const start = async ()=>{
 	try{
-	
-		await sequelize.authenticate()
-		await sequelize.sync()
+
 		app.listen(PORT,()=>console.log('SERVER START PORT - '+PORT))
 	}
 	catch(e){

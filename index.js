@@ -1,4 +1,5 @@
 require('dotenv').config()
+console.log("asdasdasdsad")
 const express = require('express')
 const sequelize=require('./db.js')
 const models = require('./models/models.js')
@@ -9,7 +10,7 @@ const ErrorHandler = require('./middleware/ErrorHandllingMiddleware.js')
 const path = require('path')
 
 const PORT = process.env.PORT || 5000
-
+console.log("asdasdasdsad")
 const app = express()
 app.use(cors())
 app.use(express.json())
@@ -23,7 +24,7 @@ app.use(ErrorHandler)
 
 const start = async ()=>{
 	try{
-
+		console.log("asdasdasdsad")
 		await sequelize.authenticate()
 		await sequelize.sync()
 		app.listen(PORT,()=>console.log('SERVER START PORT - '+PORT))
